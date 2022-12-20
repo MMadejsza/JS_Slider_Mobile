@@ -5,9 +5,30 @@
 		<title>Slider</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content='"Matt" Maciej Madejsza' />
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
+		<div class="slider">
+			<div class="slider__images-container">
+				<div class="slider__image-container slider__image-container--first">
+					<img src="./public/assets/image1.jpg" draggable="false" alt="" />
+				</div>
+				<div class="slider__image-container slider__image-container--second">
+					<img src="./public/assets/image2.jpg" draggable="false" alt="" />
+				</div>
+				<div class="slider__divider">
+					<div class="slider__handle">
+						<i class="fa fa-chevron-left"></i>
+						<i class="fa fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

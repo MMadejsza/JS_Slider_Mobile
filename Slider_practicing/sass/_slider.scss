@@ -1,0 +1,32 @@
+@import './_variables';
+
+.slider {
+	max-width: $image-width;
+	margin: 0 auto;
+}
+.slider__images-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: $image-height-proportion;
+}
+
+.slider__image-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	img {
+		top: 50%;
+		transform: translateY(-50%);
+		width: $image-width;
+		position: absolute;
+		user-select: none;
+	}
+	&.slider__image-container--first {
+		width: 100%;
+	}
+	&.slider__image-container--second {
+		width: 75%;
+	}
+}
