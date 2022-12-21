@@ -1,5 +1,5 @@
 # JS_Slider_Mobile
-Practicing offsets by creating images slider - one covers another (not swaping)
+Practicing offsets by creating an images slider - one covers another (not swapping)
 
 ## Website: https://mmadejsza.github.io/JS_Slider_Mobile
 ## Uses inter alia concepts of:
@@ -13,7 +13,7 @@ SCSS syntax, Variables, Imports
 Flexbox, BEM methodology, FontAwesome CDN
 
 ## Program flow:
-Click on divider icon and drag left/right to see picture covering. Works on mobile as well. 
+Click on the divider icon and drag left/right to see the picture covering. Works on mobile as well. 
 
 Enjoy, MMadejsza
 
