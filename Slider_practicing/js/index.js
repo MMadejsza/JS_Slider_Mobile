@@ -3,7 +3,7 @@ let imagesContainerWidth;
 const image1 = document.querySelector('.slider__image-container--first img');
 const image2 = document.querySelector('.slider__image-container--second img');
 let dragging = 0;
-const imagesContainerLeftOffset = imagesContainer.offsetLeft;
+let imagesContainerLeftOffset;
 const img1ContainerEl = document.querySelector('.slider__image-container--first');
 const img2ContainerEl = document.querySelector('.slider__image-container--second');
 const handleEl = document.querySelector('.slider__handle');
@@ -40,6 +40,7 @@ function initEvents() {
 
 const adjustImgSize = function () {
 	imagesContainerWidth = imagesContainer.offsetWidth;
+	imagesContainerLeftOffset = imagesContainer.offsetLeft;
 	image1.style.width = imagesContainerWidth + 'px';
 	image2.style.width = `${imagesContainerWidth}px`;
 };
