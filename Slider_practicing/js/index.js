@@ -30,9 +30,17 @@ function moveBy(distanceFromWindowLeft) {
 function initEvents() {
 	handleEl.addEventListener('mousedown', () => (dragging = !dragging));
 	handleEl.addEventListener('mouseup', () => (dragging = !dragging));
+	handleEl.addEventListener('touchstart', () => (dragging = !dragging));
+	handleEl.addEventListener('touchend', () => (dragging = !dragging));
 	window.addEventListener('mousemove', (event) => {
 		if (dragging) {
 			let distanceFromWindowLeft = event.clientX;
+			moveBy(distanceFromWindowLeft);
+		}
+	});
+	window.addEventListener('touchmove', (event) => {
+		if (dragging) {
+			let distanceFromWindowLeft = event.touches[0].clientX; // first touch
 			moveBy(distanceFromWindowLeft);
 		}
 	});
